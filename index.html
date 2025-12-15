@@ -55,31 +55,6 @@
       letter-spacing: 0.2px;
     }
 
-    /* Back-to-home button (below title) */
-    .navBack{
-      display:flex;
-      justify-content:center;
-      margin: -6px 0 14px;
-    }
-    .backBtn{
-      display:inline-block;
-      padding:10px 14px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.18);
-      background: rgba(255,255,255,0.04);
-      color: rgba(200,200,200,0.92); /* grey text */
-      text-decoration: none;
-      font-weight: 700;
-      letter-spacing: 0.1px;
-      transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
-    }
-    .backBtn:hover{
-      background: rgba(255,255,255,0.07);
-      box-shadow: 0 0 18px rgba(255,255,255,0.08);
-      transform: translateY(-1px);
-    }
-    .backBtn:active{ transform: translateY(0px); }
-
     /* Pulse glow wrapper */
     .glowBox{
       border: 1px solid var(--border);
@@ -151,6 +126,35 @@
       .container{padding:14px}
       .level{white-space: normal}
     }
+
+    /* Back-to-home button (below title) */
+    .navBack{
+      display:flex;
+      justify-content:center;
+      margin: -6px 0 14px;
+    }
+    .backBtn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.04);
+      color: rgba(200,200,200,0.92); /* grey text */
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 0.1px;
+      transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+    }
+    .backBtn:hover{
+      background: rgba(255,255,255,0.07);
+      box-shadow: 0 0 18px rgba(255,255,255,0.08);
+      transform: translateY(-1px);
+    }
+    .backBtn:active{ transform: translateY(0px); }
+
   </style>
 </head>
 
@@ -163,6 +167,7 @@
         Navigate Back to the Up North Volleyball Home Page
       </a>
     </div>
+
 
     <div class="glowBox tableWrap" aria-label="Volleyball skill levels">
       <table>
@@ -221,8 +226,8 @@
     <div class="glowBox note" aria-label="Plus and minus explanation">
       <p>The plus (+) and minus (-) system is an informal but widely used way to provide more granularity within each letter rating.</p>
       <ul>
-        <li><strong>A minus</strong> (e.g. B-) generally means a player or team is on the lower end of that skill spectrum, perhaps having just moved up from the previous level or lacking consistency in some areas.</li>
-        <li><strong>A plus</strong> (e.g. B+) indicates a player or team is at the upper end of that level, demonstrating capabilities that border on the next skill bracket but are not yet consistent enough to fully be considered part of that higher tier.</li>
+        <li><strong>A minus</strong> (e.g., B-) generally means a player or team is on the lower end of that skill spectrum, perhaps having just moved up from the previous level or lacking consistency in some areas.</li>
+        <li><strong>A plus</strong> (e.g., B+) indicates a player or team is at the upper end of that level, demonstrating capabilities that border on the next skill bracket but are not yet consistent enough to fully be considered part of that higher tier.</li>
       </ul>
     </div>
 
