@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Up North Volleyball Comprehensive Skill Guide</title>
+  <style>
+    :root{
+      --bg:#000;
+      --panel:#0b0b0b;
+      --panel2:#0f0f10;
+      --text:#fff;
+      --muted:rgba(255,255,255,0.78);
+      --yellow:#ffd400;
+      --border:rgba(255,212,0,0.28);
+      --glow:rgba(255,212,0,0.55);
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      padding:24px;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height:1.55;
+      color:var(--text);
+      background:
+        radial-gradient(900px 500px at 15% 10%, rgba(255,212,0,0.10), transparent 60%),
+        radial-gradient(700px 420px at 90% 25%, rgba(255,255,255,0.06), transparent 55%),
+        var(--bg);
+    }
+
+    .container{
+      max-width: 980px;
+      margin: 0 auto;
+      background: linear-gradient(180deg, var(--panel2), var(--panel));
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    h1{
+      margin:0 0 14px;
+      color:var(--yellow);
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      text-align:center;
+      font-size: clamp(22px, 3.2vw, 34px);
+      line-height: 1.1;
+    }
+
+    h2{
+      margin:22px 0 10px;
+      color:var(--yellow);
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    /* Pulse glow wrapper */
+    .glowBox{
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.02);
+      box-shadow: 0 0 18px rgba(255,212,0,0.18), 0 0 0 1px rgba(255,212,0,0.10) inset;
+      animation: glowPulse 2.4s ease-in-out infinite;
+    }
+
+    @keyframes glowPulse{
+      0%, 100%{
+        box-shadow: 0 0 14px rgba(255,212,0,0.22),
+                    0 0 34px rgba(255,212,0,0.10),
+                    0 0 0 1px rgba(255,212,0,0.10) inset;
+        border-color: rgba(255,212,0,0.26);
+      }
+      50%{
+        box-shadow: 0 0 26px rgba(255,212,0,0.42),
+                    0 0 70px rgba(255,212,0,0.18),
+                    0 0 0 1px rgba(255,212,0,0.18) inset;
+        border-color: rgba(255,212,0,0.42);
+      }
+    }
+
+    .tableWrap{ margin-top: 10px; }
+
+    table{
+      width:100%;
+      border-collapse: collapse;
+      background: rgba(0,0,0,0.35);
+    }
+
+    th, td{
+      border-bottom: 1px solid rgba(255,255,255,0.10);
+      padding: 12px 12px;
+      vertical-align: top;
+      text-align: left;
+      color: var(--text);
+    }
+
+    th{
+      background: rgba(255,212,0,0.10);
+      color: var(--yellow);
+      border-bottom: 1px solid rgba(255,212,0,0.25);
+      font-weight: 800;
+    }
+
+    tbody tr:hover td{ background: rgba(255,212,0,0.06); }
+
+    .level{
+      white-space: nowrap;
+      font-weight: 800;
+      color: rgba(255,255,255,0.95);
+    }
+
+    .note{
+      padding: 14px;
+      color: var(--text);
+      background: rgba(0,0,0,0.25);
+    }
+    .note p{ color: var(--muted); margin: 0 0 10px; }
+    .note ul{ margin:0; padding-left: 18px; }
+    .note li{ margin: 8px 0; color: rgba(255,255,255,0.90); }
+
+    @media (max-width: 720px){
+      body{padding:16px}
+      th, td{padding:10px}
+      .container{padding:14px}
+      .level{white-space: normal}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Up North Volleyball Comprehensive Skill Guide</h1>
+
+    <div class="glowBox tableWrap" aria-label="Volleyball skill levels">
+      <table>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="level">C / Novice</td>
+            <td>Players are beginners who are learning basic skills and the rules. The main goal is often just to get the ball over the net.</td>
+          </tr>
+          <tr>
+            <td class="level">B- / B (Beginner/Rec)</td>
+            <td>Players have a basic understanding of the game and rules. They are working on consistency with fundamental skills like serving and passing, and attempt to use three hits per side.</td>
+          </tr>
+          <tr>
+            <td class="level">B+ / Lower BB</td>
+            <td>Players are gaining better ball control and court awareness. They are more consistent with the bump-set-hit sequence, and many can overhand serve with some success.</td>
+          </tr>
+          <tr>
+            <td class="level">BB- / Lower BB</td>
+            <td>Players have good fundamentals and can execute the bump-set-hit concept with growing consistency, but they have less court vision for enhanced strategy (reading hitters, recognizing seams, running transitions, and adjusting defensive/offensive systems). They’re solid technically, and are now developing higher-level game awareness.</td>
+          </tr>
+          <tr>
+            <td class="level">BB / Intermediate</td>
+            <td>Players possess solid skills and a good knowledge of court positions and rotational sequence. They consistently use the three-hit concept, can serve overhand, and may start incorporating basic offensive/defensive strategies.</td>
+          </tr>
+          <tr>
+            <td class="level">BB+ / Upper BB</td>
+            <td>These players are very consistent (70-80% of the time) with all core skills and understand advanced strategies. They can hit the ball with some power and actively incorporate blocking and specific position play.</td>
+          </tr>
+          <tr>
+            <td class="level">A- / Lower A</td>
+            <td>Players have excellent knowledge of the game and can execute skills with a high success rate. They show a high degree of consistency and power, though they may not always perfectly execute extremely complex plays.</td>
+          </tr>
+          <tr>
+            <td class="level">A / Advanced</td>
+            <td>Players demonstrate solid ball control with few mistakes. They can place the serve anywhere on the court, run combination plays, and have a deep understanding of game strategy.</td>
+          </tr>
+          <tr>
+            <td class="level">AA / Expert</td>
+            <td>These are highly skilled, athletic players who execute plays with the highest power and efficiency. They typically have experience at elite high school, club, or collegiate levels.</td>
+          </tr>
+          <tr>
+            <td class="level">AAA / Open (Pro/Elite)</td>
+            <td>This is the highest level, comprising professional or semi-pro players. Players at this level are world-class and consistently execute with very little to no mistakes under pressure.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>The Role of + and -</h2>
+    <div class="glowBox note" aria-label="Plus and minus explanation">
+      <p>The plus (+) and minus (-) system is an informal but widely used way to provide more granularity within each letter rating.</p>
+      <ul>
+        <li><strong>A minus</strong> (e.g., B-) generally means a player or team is on the lower end of that skill spectrum, perhaps having just moved up from the previous level or lacking consistency in some areas.</li>
+        <li><strong>A plus</strong> (e.g., B+) indicates a player or team is at the upper end of that level, demonstrating capabilities that border on the next skill bracket but are not yet consistent enough to fully be considered part of that higher tier.</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>
